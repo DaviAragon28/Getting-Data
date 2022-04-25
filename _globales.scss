@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: url('./Download\ wallpapers\ 4k\,\ geometric\ figures\,\ art\,\ abstract\ texture\,\ geometry\,\ creative\ besthqwallpapers_com.png');
+}
+
+@mixin cajasArriba {
+  width: 100%;
+  background-color: #f4e5d8;
+  display: flex;
+  border-bottom: 1px solid black;
+  box-shadow: 2px 0px 10px grey;
+}
+
+@each $labels in (label) {
+  #{label} {
+    margin: 0 auto;
+  }
+}
+
+@each $p in (p) {
+  #{p} {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+}
+
+@each $buttons in (button) {
+  #{button} {
+    cursor: pointer;
+  }
+}
+@mixin hovers {
+  transform: scale(1.4);
+  transition: all 1.5s;
+}

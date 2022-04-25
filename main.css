@@ -1,0 +1,250 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: url("./Download wallpapers 4k, geometric figures, art, abstract texture, geometry, creative besthqwallpapers_com.png");
+}
+
+label {
+  margin: 0 auto;
+}
+
+p {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header figure, header nav {
+  width: 100%;
+  background-color: #f4e5d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 2px 0px 10px grey;
+          box-shadow: 2px 0px 10px grey;
+}
+header figure img, header nav img {
+  width: 200px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+header nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header nav li {
+  list-style: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.container-for-all {
+  width: 100%;
+  place-items: center;
+  -webkit-box-shadow: 10px 10px 30px black;
+          box-shadow: 10px 10px 30px black;
+  padding: 10px 10px 60px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.container-for-all .container__cuadrado {
+  width: 100px;
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  border: 3px solid red;
+}
+.container-for-all .container__results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.container-for-all .container__sides--results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+.container-for-all .result {
+  font-size: 12px;
+}
+.container-for-all .result-top {
+  margin: 0 auto;
+}
+.container-for-all .result-bottom {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.container-for-all .container__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container-for-all .label__cuadrado {
+  margin-top: 20px;
+}
+.container-for-all input {
+  width: 50%;
+  margin: 0 auto;
+}
+.container-for-all .container__buttons {
+  margin: 0 auto;
+}
+.container-for-all button {
+  margin-top: 20px;
+}
+
+.container-all-rectangulo .container__rectangulo {
+  width: 200px;
+  height: 100px;
+  border: 3px solid blue;
+  margin: 0 auto;
+}
+.container-all-rectangulo .container__results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.container-all-rectangulo .container__sides--results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+.container-all-rectangulo .result {
+  font-size: 12px;
+}
+.container-all-rectangulo .result-top {
+  margin: 0 auto;
+}
+.container-all-rectangulo .result-bottom {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.container-all-rectangulo .label__rectangulo2 {
+  margin-top: 20px;
+}
+.container-all-rectangulo .label__rectangulo {
+  margin-top: 39px;
+}
+
+.container-all-circulo .container__circulo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid tomato;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container-all-triangulo .container__triangulo {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-bottom: 100px solid yellowgreen;
+}
+
+.container-otras_figuras {
+  width: 400px;
+  padding: 0 20px;
+  display: -ms-grid;
+  display: grid;
+  height: 290px;
+  margin: 0 auto;
+  margin-top: 80px;
+  place-content: center;
+}
+
+li:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4e5d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 2px 0px 10px grey;
+          box-shadow: 2px 0px 10px grey;
+}
+footer .container__copy {
+  margin: 0 auto;
+}
