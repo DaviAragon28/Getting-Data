@@ -100,14 +100,16 @@ function calcularPerimetroRectangulo3() {
 
   const parrafo = document.querySelector('.textoDesdeJSRectangulo');
   parrafo.innerText = `El perímetro del rectangulo es: ${perimetroRec}cm`;
-  const results = document.querySelector('.result');
-  results.innerText = `${value2}cm`;
+
+  const resultTop = document.querySelector('.result-top');
+  resultTop.innerText = `${value2}cm`;
   const resultRight = document.querySelector('.result-right');
   resultRight.innerText = `${value}cm`;
   const resultLeft = document.querySelector('.result-left');
   resultLeft.innerText = `${value}cm`;
   const resultBottom = document.querySelector('.result-bottom');
   resultBottom.innerText = `${value2}cm`;
+  console.log(resultTop, resultRight, resultLeft, resultBottom)
 }
 function calcularAreaRectangulo() {
   const inputRectangulo = document.getElementById('inputRectangulo');
@@ -120,14 +122,16 @@ function calcularAreaRectangulo() {
 
   const parrafo = document.querySelector('.textoDesdeJSRectangulo');
   parrafo.innerText = `El area del rectangulo es: ${areaRec} cm²`;
-  const results = document.querySelector('.result');
-  results.innerText = `${value2}cm`;
+
+  const resultTop = document.querySelector('.result-top');
+  resultTop.innerText = `${value2}cm`;
   const resultRight = document.querySelector('.result-right');
   resultRight.innerText = `${value}cm`;
   const resultLeft = document.querySelector('.result-left');
   resultLeft.innerText = `${value}cm`;
   const resultBottom = document.querySelector('.result-bottom');
   resultBottom.innerText = `${value2}cm`;
+  console.log(resultTop)
 }
 
 //Circulo
@@ -199,3 +203,62 @@ function calcularAlturaTriangulo() {
   const parrafo = document.querySelector('.textoDesdeJSTriangulo');
   parrafo.innerText = `La altura del triangulo es: ${valorFinal.toFixed(2)}cm`;
 }
+
+
+const containerCuadrado = document.querySelector('.container-all-cuadrado')
+const containerRectangulo = document.querySelector('.container-all-rectangulo')
+const containerTriangulo = document.querySelector('.container-all-triangulo')
+const containerCirculo = document.querySelector('.container-all-circulo')
+const containerOtherFigures = document.querySelector('.container-otras_figuras')
+
+const showCuadrado = document.querySelector('#showCuadrado')
+
+showCuadrado.addEventListener('click', () => {
+  containerCuadrado.classList.remove('inactive')
+  containerRectangulo.classList.add('inactive')
+  containerTriangulo.classList.add('inactive')
+  containerCirculo.classList.add('inactive')
+  containerOtherFigures.classList.add('inactive')
+})
+
+const showRectangulo = document.querySelector('#showRectangulo')
+
+showRectangulo.addEventListener('click', () => {
+  containerRectangulo.classList.remove('inactive')
+  containerCuadrado.classList.add('inactive')
+  containerTriangulo.classList.add('inactive')
+  containerCirculo.classList.add('inactive')
+  containerOtherFigures.classList.add('inactive')
+})
+
+
+const showTriangulo = document.querySelector('#showTriangulo')
+
+showTriangulo.addEventListener('click', () => {
+  containerTriangulo.classList.remove('inactive')
+  containerCuadrado.classList.add('inactive')
+  containerRectangulo.classList.add('inactive')
+  containerCirculo.classList.add('inactive')
+  containerOtherFigures.classList.add('inactive')
+})
+
+
+const showCirculo = document.querySelector('#showCircule')
+
+showCirculo.addEventListener('click', () => {
+  containerCirculo.classList.remove('inactive')
+  containerTriangulo.classList.add('inactive')
+  containerCuadrado.classList.add('inactive')
+  containerRectangulo.classList.add('inactive')
+  containerOtherFigures.classList.add('inactive')
+})
+
+const showOtherFigures = document.querySelector('#showOtherFigures')
+
+showOtherFigures.addEventListener('click', () => {
+  containerOtherFigures.classList.remove('inactive')
+  containerCuadrado.classList.add('inactive')
+  containerRectangulo.classList.add('inactive')
+  containerTriangulo.classList.add('inactive')
+  containerCirculo.classList.add('inactive')
+})

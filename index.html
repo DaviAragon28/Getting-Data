@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./imagenHeader.jpg">
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,700;1,300&display=swap"
       rel="stylesheet"
@@ -26,14 +27,15 @@
       </figure>
       <nav>
         <ul>
-          <li><a href="index.html">Cuadrado</a></li>
-          <li><a href="rectangulo.html">Rectangulo</a></li>
-          <li><a href="triangulo.html">Triangulo</a></li>
-          <li><a href="circulo.html">Circulo</a></li>
-          <li><a href="otrasfiguras.html">Otras figuras</a></li>
+          <li><a id="showCuadrado">Cuadrado</a></li>
+          <li><a id="showRectangulo">Rectangulo</a></li>
+          <li><a id="showTriangulo">Triangulo</a></li>
+          <li><a id="showCircule">Circulo</a></li>
+          <li><a id="showOtherFigures">Otras figuras</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="container-for-all container-all-cuadrado">
         <div class="container__cuadrado">
@@ -66,6 +68,129 @@
             </button>
           </div>
         </div>
+      </section>
+
+      <section class="container-for-all container-all-rectangulo inactive">
+        <div class="container__rectangulo">
+          <div class="container__results">
+            <span class="result result-top"></span>
+            <div class="container__sides--results">
+              <span class="result result-right"></span>
+              <span class="result result-left"></span>
+            </div>
+            <span class="result result-bottom"></span>
+          </div>
+        </div>
+        <div class="container__contenido">
+          <label class="label__rectangulo" for="inputRectangulo"
+            >Ingresa la medida de uno de tus lados de tu rectangulo.</label
+          >
+          <br />
+          <input
+            placeholder="Escribe aquí"
+            type="number"
+            id="inputRectangulo"
+          />
+          <br />
+          <label class="label__rectangulo2" for="inputRectangulo2"
+            >Ingresa la medida de la base de tu rectangulo para iniciar a
+            calcular.</label
+          >
+          <br />
+          <input
+            placeholder="Escribe aquí"
+            type="number"
+            id="inputRectangulo2"
+          />
+          <br />
+          <p class="textoDesdeJSRectangulo"></p>
+          <div class="container__buttons">
+            <button type="button" onclick="calcularPerimetroRectangulo3()">
+              Calcular perímetro
+            </button>
+            <button type="button" onclick="calcularAreaRectangulo()">
+              Calcular área
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-for-all container-all-triangulo inactive">
+        <div class="container__triangulo">
+          <div class="container__results">
+            <span class="result result-top"></span>
+            <div class="container__sides--results">
+              <span class="result result-right"></span>
+              <span class="result result-left"></span>
+            </div>
+            <span class="result result-bottom"></span>
+          </div>
+        </div>
+        <div class="container__contenido">
+          <label
+            placeholder="Escribe aquí"
+            class="label__triangulo"
+            for="inputTriangulo"
+            >Ingresa la medida de uno de tus lados de tu cuadrado para iniciar a
+            calcular.</label
+          >
+          <br />
+          <input type="number" id="inputTriangulo" placeholder="Escribe aquí" />
+          <br />
+          <p class="textoDesdeJSTriangulo"></p>
+          <div class="container__buttons">
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+              Calcular perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+              Calcular área
+            </button>
+            <button type="button" onclick="calcularAlturaTriangulo()">
+              Calcular altura
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-for-all container-all-circulo inactive">
+        <div class="container__circulo">
+          <!-- <div class="container__results">
+            <span class="result result-top"></span>
+            <div class="container__sides--results">
+              <span class="result result-right"></span>
+              <span class="result result-left"></span>
+            </div>
+            <span class="result result-bottom"></span> -->
+          </div>
+        </div>
+        <div class="container__contenido">
+        <label class="label__circulo" for="inputCirculo"
+            >Ingresa el radio de tu circulo.</label
+          >
+          <br />
+          <input
+            placeholder="Escribe aquí"
+            type="number"
+            id="inputCirculo"
+          />
+          <br />
+          <p class="textoDesdeJSCirculo"></p>
+          <div class="container__buttons">
+            <button type="button" onclick="calcularPerimetroCirculo()">
+              Calcular perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+              Calcular área
+            </button>
+            <button type="button" onclick="calcularDiametroCirculo()">Calcular diámetro</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-for-all container-otras_figuras inactive">
+        <p>
+          This section isn't available now, Thank you for understanding us. 😉
+        </p>
       </section>
     </main>
     <footer>

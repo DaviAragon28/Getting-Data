@@ -36,6 +36,7 @@ header {
       text-transform: uppercase;
       font-weight: 700;
       color: black;
+      cursor: pointer;
     }
   }
 }
@@ -188,4 +189,8 @@ footer {
   .container__copy {
     margin: 0 auto;
   }
+}
+
+.inactive{
+  display: none;
 }
