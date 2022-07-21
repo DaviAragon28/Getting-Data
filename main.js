@@ -101,13 +101,13 @@ function calcularPerimetroRectangulo3() {
   const parrafo = document.querySelector('.textoDesdeJSRectangulo');
   parrafo.innerText = `El perímetro del rectangulo es: ${perimetroRec}cm`;
 
-  const resultTop = document.querySelector('.result-top');
+  const resultTop = document.querySelector('.result-top-rg');
   resultTop.innerText = `${value2}cm`;
-  const resultRight = document.querySelector('.result-right');
+  const resultRight = document.querySelector('.result-right-rg');
   resultRight.innerText = `${value}cm`;
-  const resultLeft = document.querySelector('.result-left');
+  const resultLeft = document.querySelector('.result-left-rg');
   resultLeft.innerText = `${value}cm`;
-  const resultBottom = document.querySelector('.result-bottom');
+  const resultBottom = document.querySelector('.result-bottom-rg');
   resultBottom.innerText = `${value2}cm`;
   console.log(resultTop, resultRight, resultLeft, resultBottom)
 }

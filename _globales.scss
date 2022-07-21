@@ -5,7 +5,8 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-image: url('./Download\ wallpapers\ 4k\,\ geometric\ figures\,\ art\,\ abstract\ texture\,\ geometry\,\ creative\ besthqwallpapers_com.png');
+  background-image: url('https://i.postimg.cc/V6QKGfHJ/Download-wallpapers-4k-geometric-figures-art-abstract-texture-geometry-creative-besthqwallpaper.png');
+  min-height: 100vh;
 }
 
 @mixin cajasArriba {
@@ -36,6 +37,6 @@ body {
   }
 }
 @mixin hovers {
-  transform: scale(1.4);
-  transition: all 1.5s;
+  transform: scale(1.2);
+  transition: all 1.2s;
 }

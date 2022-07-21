@@ -44,7 +44,7 @@ header {
 main {
   display: grid;
   place-content: center;
-  margin-top: 100px;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -52,7 +52,7 @@ main {
   width: 100%;
   place-items: center;
   box-shadow: 10px 10px 30px black;
-  padding: 10px 10px 60px 10px;
+  padding: 10px 10px 30px;
   border-radius: 10px;
   background-color: white;
 
@@ -129,11 +129,11 @@ main {
   .result {
     font-size: 12px;
   }
-  .result-top {
+  .result-top-rg {
     margin: 0 auto;
   }
 
-  .result-bottom {
+  .result-bottom-rg {
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -178,6 +178,7 @@ main {
   margin-top: 80px;
   place-content: center;
 }
+
 li:hover {
   @include hovers;
 }
